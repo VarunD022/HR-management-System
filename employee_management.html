@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <style>
+        /* Employee Management Styles */
+        body { font-family: Arial, sans-serif; margin: 20px; color: #333; }
+        .container { max-width: 800px; margin: auto; }
+        .title { text-align: center; color: #0a3d62; }
+        .form { display: flex; flex-direction: column; }
+        .form input, .form button { margin: 10px 0; padding: 10px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Employee Management</h2>
+        <form class="form" id="employeeForm">
+            <input type="text" id="employeeName" placeholder="Employee Name">
+            <input type="text" id="employeeRole" placeholder="Employee Role">
+            <button type="button" onclick="addEmployee()">Add Employee</button>
+        </form>
+        <div id="employeeList"></div>
+        <a href="index.html">Back to Dashboard</a>
+    </div>
+    <script>
+        // Employee Management Script
+        const employeeList = document.getElementById('employeeList');
+
+        function addEmployee() {
+            const name = document.getElementById('employeeName').value;
+            const role = document.getElementById('employeeRole').value;
+            if (name && role) {
+                const employee = document.createElement('p');
+                employee.textContent = `Name: ${name}, Role: ${role}`;
+                employeeList.appendChild(employee);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Claims</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; color: #333; }
+        .container { max-width: 800px; margin: auto; }
+        .title { text-align: center; color: #0a3d62; }
+        .form { display: flex; flex-direction: column; }
+        .form input, .form button { margin: 10px 0; padding: 10px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Expense Claims</h2>
+        <form class="form" id="expenseForm">
+            <input type="text" id="employeeName" placeholder="Employee Name">
+            <input type="number" id="expenseAmount" placeholder="Expense Amount">
+            <input type="text" id="expenseReason" placeholder="Expense Reason">
+            <button type="button" onclick="submitClaim()">Submit Claim</button>
+        </form>
+        <div id="expenseClaims">
+            <h3>Submitted Expense Claims</h3>
+            <!-- List of claims -->
+        </div>
+        <a href="index.html">Back to Dashboard</a>
+    </div>
+    <script>
+        // Expense Claims Script
+        const expenseClaims = document.getElementById('expenseClaims');
+
+        function submitClaim() {
+            const name = document.getElementById('employeeName').value;
+            const amount = document.getElementById('expenseAmount').value;
+            const reason = document.getElementById('expenseReason').value;
+            if (name && amount && reason) {
+                const claimEntry = document.createElement('p');
+                claimEntry.textContent = `${name} - $${amount} - ${reason}`;
+                expenseClaims.appendChild(claimEntry);
+            }
+        }
+    </script>
+</body>
+</html>

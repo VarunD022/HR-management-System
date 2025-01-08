@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Management Dashboard</title>
+    <style>
+        /* Dashboard Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #f0f4f8; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif; color: #333; }
+        .container { width: 90%; max-width: 1200px; padding: 20px; }
+        .title { text-align: center; margin-bottom: 20px; font-size: 2em; color: #0a3d62; }
+        .dashboard { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+        .card { background-color: #fff; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; cursor: pointer; transition: transform 0.2s; }
+        .card:hover { transform: scale(1.05); }
+        .card h3 { color: #1e3799; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <!-- Dashboard Page Content -->
+    <div class="container">
+        <div class="title">HR Management Dashboard</div>
+        <div class="dashboard">
+            <!-- Redirecting Links -->
+            <a class="card" href="employee_management.html">
+                <h3>Employee Management</h3>
+                <p>Manage employee records and details.</p>
+            </a>
+            <a class="card" href="leave_attendance.html">
+                <h3>Leave & Attendance</h3>
+                <p>Track leaves and attendance records.</p>
+            </a>
+            <a class="card" href="shift_management.html">
+                <h3>Shift Management</h3>
+                <p>Organize and manage shifts.</p>
+            </a>
+            <a class="card" href="expense_claims.html">
+                <h3>Expense Claims</h3>
+                <p>Handle expense claims and advances.</p>
+            </a>
+            <a class="card" href="hiring.html">
+                <h3>Hiring</h3>
+                <p>Oversee the hiring process.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
