@@ -9,6 +9,6 @@ Expense Claims: Handle and process expense claims and advances.<br>
 Hiring: Oversee the recruitment process from job posting to candidate onboarding.<br>
 
 Tech Stack <br>
-Frontend: HTML, CSS, JavaScript (React, Vue, or Angular as per your setup)<br>
+Frontend: HTML, CSS, JavaScript <br>
 Backend: Node.js, Express <br>
 Database: MongoDB / MySQL <br>
