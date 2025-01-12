@@ -10,5 +10,4 @@ Hiring: Oversee the recruitment process from job posting to candidate onboarding
 
 Tech Stack <br>
 Frontend: HTML, CSS, JavaScript <br>
-Backend: Node.js, Express <br>
-Database: MongoDB / MySQL <br>
+
